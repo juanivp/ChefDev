@@ -2,10 +2,15 @@
     margin: 0;
     font-family: 'Lato', sans-serif;
 }
+body{
+    background: -webkit-linear-gradient(to right, rgba(53, 50, 48, 0.205), rgba(128, 125, 122, 0.603));  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, rgba(77, 18, 18, 0.425), rgba(209, 144, 60, 0.61)), URL(/images/fondototal.png);
+    color: cornsilk;
+}
 /*landing page*/
 .main {
     width: 100%;
-    height: 100vh;
+    height: 95vh;
     background: #D1913C;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, rgba(53, 50, 48, 0.61), rgba(128, 125, 122, 0.603)), URL(../images/chef-cooking-food-in-the-restaurant-kitchen.png);;  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, rgba(53, 50, 48, 0.61), rgba(209, 144, 60, 0.61)), URL(../images/chef-cooking-food-in-the-restaurant-kitchen.png);; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -92,18 +97,19 @@ header label:hover {
     font-family: 'Lato', sans-serif ;
     font-weight: 400;
     font-size: 4vw;
-    color: black;
-    background: #D1913C;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, rgba(53, 50, 48, 0.61), rgba(128, 125, 122, 0.603)) ;  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, rgba(53, 50, 48, 0.61), rgba(209, 144, 60, 0.61)) ; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   
+
 }
 .servicios {
     width: 100vw;
     height: 50vh;
     padding: 0%;
-    background: #D1913C;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, rgba(53, 50, 48, 0.61), rgba(128, 125, 122, 0.603)) ;  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, rgba(53, 50, 48, 0.61), rgba(209, 144, 60, 0.61)) ; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-image: url(/images/fondoServiciosIndex.png);
+    /*
+    background: #D1913C;  
+    background: -webkit-linear-gradient(to right, rgba(53, 50, 48, 0.61), rgba(128, 125, 122, 0.603)) ;   Chrome 10-25, Safari 5.1-6 
+    background: linear-gradient(to right, rgba(53, 50, 48, 0.61), rgba(209, 144, 60, 0.61)) ;  W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ 
+    */
     
 }
 .fontKanit {
@@ -154,8 +160,10 @@ h1{
     color:darkred;
 }
 .experienciasFlex {
+    margin: 5px;
     display: flex;
     flex-flow: column nowrap;
+    background-color: none;
 }
 .experiencia1y3 {
     display: flex;
