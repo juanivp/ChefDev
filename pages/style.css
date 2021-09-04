@@ -3,8 +3,7 @@
     font-family: 'Lato', sans-serif;
 }
 body{
-    background: -webkit-linear-gradient(to right, rgba(53, 50, 48, 0.205), rgba(128, 125, 122, 0.603));  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, rgba(77, 18, 18, 0.425), rgba(209, 144, 60, 0.61)), URL(/images/fondototal.png);
+    background-color: rgba(0, 0, 0, 0.904);
     color: cornsilk;
 }
 /*landing page*/
