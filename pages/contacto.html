@@ -5,8 +5,8 @@
     <head>
         <meta charset="UTF-8">
         <title>Chef Developer</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-        <link rel="stylesheet" href="/pages/style.css">
+        <link rel="stylesheet"  href="/css/bootstrap.min.css" crossirigin="anonymous">
+        <link rel="stylesheet" href="/css/style.css">      
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,500;1,500&family=Lato&display=swap" rel="stylesheet">
@@ -26,35 +26,95 @@
             <div class="texto">
                 <div class="caja">
                     <h1 class="h1">CHEF DEVELOPER</h1>
-                    <p class="subh1">Llevá tu cocina a su máximo potencial</p>
+                    <p class="display-5 text-center">Queremos conocerte!</p>
                 </div>
-
             </div>    
+            <!--FORMULARIO-->
+            </header>
+            <div class="container">
+                    <div class="mb-3">
+                        <label for="nombre-txt">Nombre</label>
+                        <input type="text" class="form-label form-control" id="nombre-txt" placeholder="Cómo te llamas?">
+                        <label for="apellido-txt">Apellido</label>
+                        <input type="text" class="form-label form-control" id="apellido-txt" placeholder="Cómo es tu apellido?">
+                    </div>
+                    <div class="mb-3">
+                        <label for="provincia-txt" class="form-label">Provincia</label>
+                        <select class="form-select" aria-label="Default select example" id="provincia-txt">
+                                <option selected>Seleccionar</option>
+                                <option value="1">Buenos Aires</option>
+                                <option value="2">Capital Federal</option>
+                                <option value="3">Catamarca</option>
+                                <option value="4">Chaco</option>
+                                <option value="5">Chubut</option>
+                                <option value="6">Córdoba</option>
+                                <option value="7">Corrientes</option>
+                                <option value="8">Entre Ríos</option>
+                                <option value="9">Formosa</option>
+                                <option value="10">Jujuy</option>
+                                <option value="11">La Pampa</option>
+                                <option value="12">La Rioja</option>
+                                <option value="13">Mendoza</option>
+                                <option value="14">Misiones</option>
+                                <option value="15">Neuquén</option>
+                                <option value="16">Río Negro</option>
+                                <option value="17">Salta</option>
+                                <option value="18">San Juan</option>
+                                <option value="19">San Luis</option>
+                                <option value="20">Santa Cruz</option>
+                                <option value="21">Santa Fe</option>
+                                <option value="22">Santiago del Estero</option>
+                                <option value="23">Tierra del Fuego</option>
+                                <option value="24">Tucumán</option>
+                        </select>
+                    </div>
+                    <label for="opciones-formulario" class="form-label">Me interesa</label>
+                    <div class="mb-3">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" value="" id="opcion1">
+                            <label class="form-check-label" for="opcion1">
+                              PROMO 3 CURSOS 40% OFF
+                            </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" value="" id="opcion2" checked>
+                            <label class="form-check-label" for="opcion2">
+                              Curso Panadería
+                            </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" value="" id="opcion3">
+                            <label class="form-check-label" for="opcion3">
+                              Curso de Pastas
+                            </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" value="" id="opcion4" checked>
+                            <label class="form-check-label" for="opcion4">
+                              Curso Veggie
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="opcion5" checked>
+                            <label class="form-check-label" for="opcion5">
+                              Asesoría
+                            </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" value="" id="opcion6" checked>
+                            <label class="form-check-label" for="opcion6">
+                              Chef en Casa
+                            </label>
+                        </div>
+                    </div>
+                    <div class="d-grid gap-2 col-6 mx-auto">
+                        <button class="btn btn-primary" type="button">Enviar</button>
+                    </div>
+            </div>
+                        
+                        
             
-        </header>
-        <h1>Queremos conocerte!</h1>
-            <form action="ejemplo.php" method="POST" enctype="text/plain">
-            <label for="nombre">NOMBRE</label>
-            <input type="text"  name="nombre"/><br>
-            <label for="apellido">APELLIDO</label>
-            <input type="text"  name="apellido"/><br>
-            <label for="mai">CORREO ELECTRÓNICO</label>
-            <input type="email"  name="mail" placeholder="ejemplo@mail.com.ar"/><br>
-            <label for="tel">TELÉFONO</label>
-            <input type="text"  name="tel" placeholder="011 1234 5678"/><br>
-            <label for="interes">Me interesa</label><br>
-            <input type="checkbox" name="interes" value="intereses">PROMO 3 Cursos 20% OFF<br>
-            <input type="checkbox" name="interes" value="intereses">Curso 1<br>
-            <input type="checkbox" name="interes" value="intereses">Curso 2<br>
-            <input type="checkbox" name="interes" value="intereses">Curso 3<br>
-            <input type="checkbox" name="interes" value="intereses">Chef en casa<br>
-            <input type="checkbox" name="interes" value="intereses">Asesoría<br>
-            <input type="checkbox" name="interes" value="intereses">Sólo charlar<br>
-            <input type="checkbox" name="interes" value="intereses">Otro<br>
-            <textarea rows="10" cols="50" placeholder="Me mandan más información sobre..."></textarea><br>
-            <input type="submit" name="enviar" value="Enviar">
-            <input type="reset" name="borrar"   value="Borrar todo!">
-            </form>
+            
         <footer>
             Encontranos!<br>   
                 <a href="http://facebook.com/chefdeveloper"><img src="../prueba/images/facebook-2429746_640.png" alt="facebook"/></a>
