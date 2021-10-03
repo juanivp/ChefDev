@@ -13,28 +13,70 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,500;1,500&family=Lato&display=swap" rel="stylesheet">
     </head>
-    <body>
+    <body class="bg-dark text-white">
         <header class="main">
-            <input type="checkbox" id="btn-menu">
-            <label for="btn-menu"><img id="btn-menu2" src="images/menu.png"></label>
-               <nav class="menu">
-                   <ul>
-                        <li><a class="botonNavegador" href="pages/servicios.html">Servicios</a></li>
-                        <li><a class="botonNavegador" href="pages/comunidad.html">Comunidad</a></li>
-                        <li><a class="botonNavegador" href="pages/contacto.html">Contacto</a></li>
-                    </ul>
-                </nav>
-            <div class="texto">
-                <div class="caja">
-                    <h1 class="h1">CHEF DEVELOPER</h1>
-                    <p class="subh1">Llevá tu cocina a su máximo potencial</p>
-                </div>
+            <!--MENU DE NAVEGACIÓN-->
+            <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+                <div class="container-fluid">
+                    <a href="#" class="navbar-brand">
+                        <img src="/images/logo-vector.svg" alt="Logo" height="100rem" width="100rem">
+                    </a>
 
-            </div>    
+                    <button 
+                    class="navbar-toggler" 
+                    type="button" 
+                    data-bs-toggle="collapse" 
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    
+                    <span class="navbar"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse menu-navegacion" id="navbarSupportedContent">
+                        <ul class="navbar-nav text-center ms-auto>
+                            <li class="nav-item"><a class="nav-link" href="pages/servicios.html">Servicios</a></li>
+                            <li class="nav-item"><a class="nav-link" href="pages/comunidad.html">Comunidad</a></li>
+                            <li class="nav-item"><a class="nav-link" href="pages/contacto.html">Contacto</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        
+            <div class="caja">
+                <h1 class="h1">CHEF DEVELOPER</h1>
+            </div>
+                
+            <!--CARROUSEL DE IMAGENES-->
+                <div id="carouselExampleControls" class="carousel slide w-100" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                        <img src="images/carrousel-1.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                        <img src="images/carrousel-2.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                        <img src="images/carrousel-3.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
             
         </header>
+
     
-        <section class="experienciasFlex container-fluid">
+        <!--EXPERIENCIAS-->
+        <section class="experienciasFlex container-fluid bg-dark">
             <figure>      
                 <blockquote class="blockquote experiencia1y3 row text-end">
                     <p class="col-md-6 col-sm-12">"Después de tanto tiempo en aislamiento quisimos celebrar nuestro aniversario y llamamos a ChefDeveloper para que nos cocine. La cena fue un lujo!! Preferimos evitar ir a restaurants con mucha gente y esta fue sin duda la mejor opción. Comimos como si estuvieramos en un restaurant de lujo y desde el living de casa."</p> 
@@ -63,26 +105,27 @@
                 </figcaption>
             </figure>
         </section>
-        <hr>    
-                <main class="servicios">
-                    <div class="titulo-servicios">Servicios</div>
-                        <section class="flexPadre">
-                            <div class="flexHijo"><img src="images/eat.png" alt="comiendo">
-                                <h2 class="fontKanit"><a href="pages/servicios.html">Chef en casa</a></h2>
-                                    <h3>Recibí a CHEF DEVELOPER en tu casa y viví una experiencia única.</h3>
-                            </div>
-                            <div class="flexHijo"><img  src="images/book.png" alt="libro de cocina">
-                                <h2 class="fontKanit"><a href="pages/cursos-online.html">Cursos Online</a>
-                                </h2>
-                                    <h3>Aprendé a tu propio ritmo cómo hacer los mejores platos.</h3> 
-                            </div>
-                            <div class="flexHijo"><img src="images/support.png" alt="acuerdo">
-                                 <h2 class="fontKanit"><a href="pages/servicios.html">Asesoría gastronómica</a></h2>
-                                    <h3>Asesorá a tu equipo de trabajo para tener la mejor rentabilidad posible.</h3>
-                            </div>
-                        </section>
-                    </main>
-                    <hr>    
+        
+        <!--SERVICIOS-->
+        <main class="servicios bg-dark">
+            <div class="titulo-servicios">Servicios</div>
+                <section class="flexPadre">
+                    <div class="flexHijo"><img src="images/eat.png" alt="comiendo">
+                        <h2 class="fontKanit"><a href="pages/servicios.html">Chef en casa</a></h2>
+                            <h3>Recibí a CHEF DEVELOPER en tu casa y viví una experiencia única.</h3>
+                    </div>
+                    <div class="flexHijo"><img  src="images/book.png" alt="libro de cocina">
+                        <h2 class="fontKanit"><a href="pages/cursos-online.html">Cursos Online</a>
+                        </h2>
+                            <h3>Aprendé a tu propio ritmo cómo hacer los mejores platos.</h3> 
+                    </div>
+                    <div class="flexHijo"><img src="images/support.png" alt="acuerdo">
+                            <h2 class="fontKanit"><a href="pages/servicios.html">Asesoría gastronómica</a></h2>
+                            <h3>Asesorá a tu equipo de trabajo para tener la mejor rentabilidad posible.</h3>
+                    </div>
+                </section>
+            </main>
+        
 
 
         <footer class="bg-dark text-white py-4">
@@ -125,7 +168,8 @@
         </footer>
 
             <!--script de JavaScript para funcionamiento de herramientas de bootstrap-->
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+            <script src="js/bootstrap.bundle.min.js"></script>
+            <script src="js/bootstrap.min.js"></script>
     </body>
         
 </html>

@@ -13,26 +13,43 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,500;1,500&family=Lato&display=swap" rel="stylesheet">
     </head>
-    <body>
+    <body class="bg-dark text-white">
         <header class="main">
-            <input type="checkbox" id="btn-menu">
-            <label for="btn-menu"><img id="btn-menu2" src="/images/menu.png"></label>
-               <nav class="menu">
-                   <ul>
-                    <li><a class="botonNavegador" href="servicios.html">Servicios</a></li>
-                    <li><a class="botonNavegador" href="comunidad.html">Comunidad</a></li>
-                    <li><a class="botonNavegador" href="contacto.html">Contacto</a></li>
-                    <li><a class="botonNavegador" href="../index.html">Principal</a></li>
-                    </ul>
-                </nav>
-            <div class="texto">
-                <div class="caja">
-                    <h1 class="h1">CHEF DEVELOPER</h1>
-                    <p class="display-5 text-center">Queremos conocerte!</p>
+            <!--MENU DE NAVEGACIÓN-->
+            <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+                <div class="container-fluid">
+                    <a href="#" class="navbar-brand">
+                        <img src="/images/logo-vector.svg" alt="Logo" height="100rem" width="100rem">
+                    </a>
+
+                    <button 
+                    class="navbar-toggler" 
+                    type="button" 
+                    data-bs-toggle="collapse" 
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    
+                    <span class="navbar"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse menu-navegacion" id="navbarSupportedContent">
+                        <ul class="navbar-nav text-center ms-auto>
+                            <li class="nav-item"><a class="nav-link" href="/index.html">Principal</a></li>
+                            <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+                            <li class="nav-item"><a class="nav-link" href="comunidad.html">Comunidad</a></li>
+                        </ul>
+                    </div>
                 </div>
-            </div>    
-            <!--FORMULARIO-->
-            </header>
+            </nav>
+        
+            <div class="caja">
+                <h1 class="h1">CHEF DEVELOPER</h1>
+            </div>
+                
+        </header>
+
             <div class="container">
                     <div class="mb-3">
                         <label for="nombre-txt">Nombre</label>
